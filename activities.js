@@ -257,7 +257,7 @@ if (films[2] != "Ghostbusters"){
     console.log("We're the one, we're the only...Ghostbusters!")
 }
 
-//Part 4 Activity 5
+//Part 4 Activity 5 (INCOMPLETE)
 var min = 1;
 var max = 30;
 function getRandomArbitrary(random) {
