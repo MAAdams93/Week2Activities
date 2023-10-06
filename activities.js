@@ -295,7 +295,7 @@ let hannahsFollwers = [
 
 
 //Part 5 Activity 1 (INCOMPLETE)
-const factorial = (number) => {
+var factorial = (number) => {
    if ((number === 0) || (number === 1)) {
     return 1;
 } else {
@@ -303,7 +303,7 @@ const factorial = (number) => {
 }
 };
 
-console.log(factorial(5));
+factorial(5);
 
 //Part 5 Activity 2 (INCOMPLETE)
 let orderCount = 0;
