@@ -220,15 +220,14 @@ while (x < favouriteFilms.length) {
 }
 
 //Part 4 Activity 2
-var min = 1;
 var max = 50;
-function getRandomArbitrary(random) {
-    return Math.random() * (max - min) + min;
+function getRandomArbitrary(max) {
+    return Math.floor(Math.random() * max);
   }
   
-for (let i = 0; i < 6; i++) {
-    console.log(getRandomArbitrary());
-}
+  console.log(getRandomArbitrary(50));
+  console.log(getRandomArbitrary(50));
+  console.log(getRandomArbitrary(50));
 
 //Part 4 Activity 3
 function countdown() {
@@ -258,24 +257,53 @@ if (films[2] != "Ghostbusters"){
 }
 
 //Part 4 Activity 5 (INCOMPLETE)
-var min = 1;
 var max = 30;
-function getRandomArbitrary(random) {
-    return Math.random() * (max - min) + min;
+function getRandomArbitrary(max) {
+    return Math.floor(Math.random() * max);
   }
   
-  console.log(getRandomArbitrary());
-  console.log(getRandomArbitrary());
-  console.log(getRandomArbitrary());
+  function divideBySeven() {
+    if (getRandomArbitrary %7 == 0) {
+        console.log("Number is divisible by 7")
+    } else {
+        console.log("Number is not divisible by 7")
+    }
+  }
+  console.log(getRandomArbitrary(30));
+  divideBySeven();
+  console.log(getRandomArbitrary(30));
+  divideBySeven();
+  console.log(getRandomArbitrary(30));
+  divideBySeven();
 
-//Part 4 Activity 6
+//Part 4 Activity 6 (INCOMPLETE)
+let bobsFollowers = [
+    "Jake",
+    "Amy",
+    "Charles",
+    "Rosa"
+]
 
+let hannahsFollwers = [
+    "Jake",
+    "Amy",
+    "Terry",
+    "Raymond"
+]
 
 //Part 4 Activity 7
 
 
-//Part 5 Activity 1
+//Part 5 Activity 1 (INCOMPLETE)
+const factorial = (number) => {
+   if ((number === 0) || (number === 1)) {
+    return 1;
+} else {
+    return (number * factorial(number-1));
+}
+};
 
+console.log(factorial(5));
 
 //Part 5 Activity 2 (INCOMPLETE)
 let orderCount = 0;
@@ -285,16 +313,22 @@ const takeOrder = (topping, orderCount) => {
     orderCount++;
 }
 
-takeOrder("pineapple");
+takeOrder("pineapple", orderCount);
+takeOrder("chicken", orderCount);
 
 //Part 5 Activity 3 (INCOMPLETE)
+let balance = 500;
 let accnum = "50449921";
 
 const cashWithdrawal = (amount, accnum) => {
-    console.log(`Withdrawing ${amount} from ${accnum}`);
+   if (amount >= balance) {
+    console.log("This amount cannot be withdrawn")
+    } else {
+        console.log(`Withdrawing ${amount} from ${accnum}`);
+    }
 }
 
-cashWithdrawal(300, accnum)
+cashWithdrawal(600, accnum)
 
 //Part 6 Activity 1
 const person = {
@@ -337,8 +371,8 @@ petDrinking();
 //Part 6 Activity 3 (INCOMPLETE)
 const coffeeShop = {
     branch: "",
-    drinksWithPrices: "",
-    foodWithPrices: ""
+    drinksWithPrices: ["Coffee", 2, "Tea", 3, "Hot chocolate", 4], 
+    foodWithPrices: ["Burger", 7, "Hot dog", 5, "chicken", 8]
 }
 
 const drinksOrdered = () => (
