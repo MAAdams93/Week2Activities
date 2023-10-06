@@ -230,7 +230,7 @@ for (let i = 0; i < 6; i++) {
     console.log(getRandomArbitrary());
 }
 
-//Part 4 Activity 3 (INCOMPLETE)
+//Part 4 Activity 3
 function countdown() {
     for (let countdown = 9; countdown >= 1; countdown--) {
         console.log (countdown);
@@ -240,7 +240,22 @@ function countdown() {
 countdown();
 
 //Part 4 Activity 4
+let films = [
+    "Die Hard",
+    "Deadpool",
+    "Ghostbusters",
+    "The Fifth Element"
+];
 
+for (let i = 0; i < films.length; i++) {
+    console.log(films[i]);
+};
+
+if (films[2] != "Ghostbusters"){
+    console.log("Somebody get me the Ghostbusters!")
+} else {
+    console.log("We're the one, we're the only...Ghostbusters!")
+}
 
 //Part 4 Activity 5
 var min = 1;
