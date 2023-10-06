@@ -316,7 +316,7 @@ const takeOrder = (topping, orderCount) => {
 takeOrder("pineapple", orderCount);
 takeOrder("chicken", orderCount);
 
-//Part 5 Activity 3 (INCOMPLETE)
+//Part 5 Activity 3
 let balance = 500;
 let accnum = "50449921";
 
