@@ -230,12 +230,14 @@ for (let i = 0; i < 6; i++) {
     console.log(getRandomArbitrary());
 }
 
-//Part 4 Activity 3
+//Part 4 Activity 3 (INCOMPLETE)
 function countdown() {
-    for (let i = 9; i >= 1; i--) {
+    for (let countdown = 9; countdown >= 1; countdown--) {
         console.log (countdown);
     }
 }
+
+countdown();
 
 //Part 4 Activity 4
 
