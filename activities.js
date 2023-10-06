@@ -258,17 +258,20 @@ if (films[2] != "Ghostbusters"){
 
 //Part 4 Activity 5 (INCOMPLETE)
 var max = 30;
+let currentNumber = 0;
+
 function getRandomArbitrary(max) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random()*max);
   }
   
   function divideBySeven() {
     if (getRandomArbitrary %7 == 0) {
         console.log("Number is divisible by 7")
-    } else {
+    } else if (getRandomArbitrary %7 != 0) {
         console.log("Number is not divisible by 7")
     }
   }
+
   console.log(getRandomArbitrary(30));
   divideBySeven();
   console.log(getRandomArbitrary(30));
@@ -276,7 +279,7 @@ function getRandomArbitrary(max) {
   console.log(getRandomArbitrary(30));
   divideBySeven();
 
-//Part 4 Activity 6 (INCOMPLETE)
+  //Part 4 Activity 6 (INCOMPLETE)
 let bobsFollowers = [
     "Jake",
     "Amy",
@@ -291,7 +294,7 @@ let hannahsFollwers = [
     "Raymond"
 ]
 
-//Part 4 Activity 7
+//Part 4 Activity 7 (INCOMPLETE)
 
 
 //Part 5 Activity 1 (INCOMPLETE)
@@ -306,7 +309,7 @@ var factorial = (number) => {
 factorial(5);
 
 //Part 5 Activity 2 (INCOMPLETE)
-let orderCount = 0;
+var orderCount = 0;
 
 const takeOrder = (topping, orderCount) => {
     console.log(`Pizza with ${topping}. You have ordered ${orderCount} pizzas.`);
